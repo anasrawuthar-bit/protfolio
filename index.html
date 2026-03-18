@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Anas — Python Django Developer & Gamer</title>
+  <meta name="description" content="Portfolio of Muhammad Anas — a passionate Python Django developer, learning Flutter & Electron, and an avid gamer." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>" />
+</head>
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;Anas<span>/&gt;</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-greeting"><span class="wave">👋</span> Hey there, I'm</p>
+          <h1 class="hero-name">Muhammad <span class="gradient-text">Anas</span></h1>
+          <p class="hero-tagline">Python Django Developer</p>
+          <div class="hero-typing">
+            <span id="typed-text"></span><span class="cursor"></span>
+          </div>
+          <p class="hero-desc">
+            Building powerful web applications with Django, exploring cross-platform development
+            with Flutter & Electron, and leveling up in the gaming world. 🎮
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">🚀 View My Work</a>
+            <a href="#contact" class="btn btn-secondary">💬 Let's Talk</a>
+          </div>
+          <div class="hero-social">
+            <a href="#" title="GitHub" aria-label="GitHub">⌨️</a>
+            <a href="#" title="LinkedIn" aria-label="LinkedIn">💼</a>
+            <a href="#" title="Twitter" aria-label="Twitter">🐦</a>
+            <a href="#" title="Discord" aria-label="Discord">🎮</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-avatar-wrapper">
+            <div class="hero-avatar-ring"></div>
+            <div class="hero-avatar-ring-2"></div>
+            <div class="hero-avatar">
+              <span class="hero-avatar-icon">👨‍💻</span>
+            </div>
+            <div class="hero-floating-badge">🐍 Python Pro</div>
+            <div class="hero-floating-badge">🎮 Gamer</div>
+            <div class="hero-floating-badge">🚀 Django Dev</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// about me</span>
+        <h2 class="section-title">Know Me <span class="gradient-text">Better</span></h2>
+        <p class="section-desc">Developer by day, gamer by night — here's my story.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hi! I'm <strong>Muhammad Anas</strong>, a passionate developer from India who loves
+            building things that live on the internet. My primary focus is on
+            <span class="about-highlight">Python and Django</span>, creating robust and scalable
+            web applications.
+          </p>
+          <p>
+            I'm currently expanding my horizons by learning <span class="about-highlight">Flutter</span>
+            for beautiful cross-platform mobile apps and <span class="about-highlight">Electron</span>
+            for powerful desktop applications. I believe in constant learning and pushing boundaries.
+          </p>
+          <p>
+            Outside of coding, you'll find me gaming 🎮 — whether it's competitive FPS, open-world RPGs,
+            or strategy games. Gaming taught me problem-solving and quick thinking, skills that I bring
+            into my development work every day.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat-card reveal reveal-delay-1">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-card reveal reveal-delay-2">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Tech Stacks</div>
+            </div>
+            <div class="stat-card reveal reveal-delay-3">
+              <div class="stat-number">∞</div>
+              <div class="stat-label">Hours Gaming</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-info-cards">
+          <div class="info-card reveal reveal-delay-1">
+            <div class="info-card-icon">🎯</div>
+            <div class="info-card-title">What I Do</div>
+            <div class="info-card-desc">Full-stack web development with Python/Django, REST APIs, database design, and server-side architecture.</div>
+          </div>
+          <div class="info-card reveal reveal-delay-2">
+            <div class="info-card-icon">📚</div>
+            <div class="info-card-title">Currently Learning</div>
+            <div class="info-card-desc">Flutter for mobile development and Electron for building cross-platform desktop applications.</div>
+          </div>
+          <div class="info-card reveal reveal-delay-3">
+            <div class="info-card-icon">🎮</div>
+            <div class="info-card-title">Gamer Life</div>
+            <div class="info-card-desc">Competitive gaming and esports enthusiast. Love strategizing, exploring virtual worlds, and connecting with fellow gamers.</div>
+          </div>
+          <div class="info-card reveal reveal-delay-4">
+            <div class="info-card-icon">⚡</div>
+            <div class="info-card-title">Fun Fact</div>
+            <div class="info-card-desc">I debug code faster after a good gaming session — it sharpens my focus and problem-solving skills!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// my skills</span>
+        <h2 class="section-title">Tech <span class="gradient-text">Arsenal</span></h2>
+        <p class="section-desc">Technologies and tools I wield in my daily dev battles.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Backend -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🐍</div>
+            <h3 class="skill-cat-title">Backend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">90%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90"></div></div></div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Django</span>
+                <span class="skill-level">85%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div></div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Django REST Framework</span>
+                <span class="skill-level">80%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div></div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">PostgreSQL / SQLite</span>
+                <span class="skill-level">75%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div></div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🎨</div>
+            <h3 class="skill-cat-title">Frontend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML / CSS</span>
+                <span class="skill-level">85%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div></div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level">70%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="70"></div></div></div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Bootstrap / Tailwind</span>
+                <span class="skill-level">75%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div></div>
+          </div>
+        </div>
+
+        <!-- Cross-Platform -->
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">📱</div>
+            <h3 class="skill-cat-title">Cross-Platform</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Flutter / Dart</span>
+                <span class="skill-level">50%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="50"></div></div></div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Electron</span>
+                <span class="skill-level">40%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="40"></div></div></div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category reveal reveal-delay-4">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🛠️</div>
+            <h3 class="skill-cat-title">Tools & DevOps</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Git / GitHub</span>
+                <span class="skill-level">80%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div></div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Linux / CLI</span>
+                <span class="skill-level">70%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="70"></div></div></div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Docker</span>
+                <span class="skill-level">45%</span>
+              </div>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="45"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// my projects</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+        <p class="section-desc">Here are some things I've built — click to see more details.</p>
+      </div>
+
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="django">Django</button>
+        <button class="filter-btn" data-filter="flutter">Flutter</button>
+        <button class="filter-btn" data-filter="electron">Electron</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal reveal-delay-1" data-category="django" data-project="1">
+          <div class="project-thumbnail">
+            <div class="project-thumbnail-gradient">🛒</div>
+            <div class="project-overlay">
+              <button class="project-overlay-btn" onclick="openModal(1)" title="View Details">🔍</button>
+              <a href="#" class="project-overlay-btn" title="Live Demo">🌐</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Django</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <p class="project-desc">A full-stack online store with user auth, payment integration, product management, and admin dashboard.</p>
+            <div class="project-footer">
+              <a href="#" class="project-link" onclick="openModal(1); return false;">View Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal reveal-delay-2" data-category="django" data-project="2">
+          <div class="project-thumbnail">
+            <div class="project-thumbnail-gradient">📋</div>
+            <div class="project-overlay">
+              <button class="project-overlay-btn" onclick="openModal(2)" title="View Details">🔍</button>
+              <a href="#" class="project-overlay-btn" title="Live Demo">🌐</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Django</span>
+              <span class="project-tag">REST API</span>
+              <span class="project-tag">Channels</span>
+            </div>
+            <h3 class="project-title">Task Manager App</h3>
+            <p class="project-desc">Real-time task tracking app with WebSocket support, team collaboration, and automated notifications.</p>
+            <div class="project-footer">
+              <a href="#" class="project-link" onclick="openModal(2); return false;">View Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal reveal-delay-3" data-category="flutter" data-project="3">
+          <div class="project-thumbnail">
+            <div class="project-thumbnail-gradient">📱</div>
+            <div class="project-overlay">
+              <button class="project-overlay-btn" onclick="openModal(3)" title="View Details">🔍</button>
+              <a href="#" class="project-overlay-btn" title="GitHub">⌨️</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Dart</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+            <h3 class="project-title">Mobile Inventory App</h3>
+            <p class="project-desc">Cross-platform mobile app for inventory management with barcode scanning and real-time sync.</p>
+            <div class="project-footer">
+              <a href="#" class="project-link" onclick="openModal(3); return false;">View Details →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal reveal-delay-4" data-category="electron" data-project="4">
+          <div class="project-thumbnail">
+            <div class="project-thumbnail-gradient">🖥️</div>
+            <div class="project-overlay">
+              <button class="project-overlay-btn" onclick="openModal(4)" title="View Details">🔍</button>
+              <a href="#" class="project-overlay-btn" title="GitHub">⌨️</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Electron</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">SQLite</span>
+            </div>
+            <h3 class="project-title">Desktop Notes App</h3>
+            <p class="project-desc">A sleek Electron-based desktop app for markdown note-taking with local storage and dark mode support.</p>
+            <div class="project-footer">
+              <a href="#" class="project-link" onclick="openModal(4); return false;">View Details →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">// get in touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-desc">Got a project idea or just want to say hi? Drop me a message!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-info-text">
+            Whether you want to collaborate on a project, discuss tech, or just have a gaming chat — 
+            I'm always open for a conversation. Hit me up!
+          </p>
+          <div class="contact-card">
+            <div class="contact-card-icon">📧</div>
+            <div>
+              <div class="contact-card-label">Email</div>
+              <div class="contact-card-value">muhammadanas@example.com</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">📍</div>
+            <div>
+              <div class="contact-card-label">Location</div>
+              <div class="contact-card-value">India</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon">🎮</div>
+            <div>
+              <div class="contact-card-label">Discord</div>
+              <div class="contact-card-value">anas#0000</div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-1" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Project Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">🚀 Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">
+        © 2026 <span class="gradient-text">Muhammad Anas</span>. Crafted with ❤️ and lots of ☕
+      </p>
+      <div class="footer-links">
+        <a href="#" title="GitHub">⌨️</a>
+        <a href="#" title="LinkedIn">💼</a>
+        <a href="#" title="Twitter">🐦</a>
+        <a href="#" title="Discord">🎮</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ PROJECT MODAL ============ -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <div class="modal-meta" id="modalTags"></div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-actions" id="modalActions"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
