@@ -98,14 +98,20 @@ const ventureTeam = [
   {
     name: "Muhammad Anas",
     role: "Django systems, APIs, automation, and product delivery",
+    portfolioLabel: "This portfolio",
+    portfolioHref: "#top",
   },
   {
     name: "Ajmal",
     role: "Hosting, web development, and customer relationship management",
+    portfolioLabel: "Portfolio website",
+    portfolioHref: "https://itsmeajmal.in/",
   },
   {
     name: "Rafi",
     role: "Python and Odoo ERP development for business workflows",
+    portfolioLabel: "Portfolio website",
+    portfolioHref: "https://itsmerafi.in",
   },
 ];
 
@@ -370,6 +376,20 @@ export default function Home() {
               <article className={styles.ventureMember} key={member.name}>
                 <h3>{member.name}</h3>
                 <p>{member.role}</p>
+                <div className={styles.memberLinkSlot}>
+                  {member.portfolioHref ? (
+                    <a
+                      className={styles.memberLink}
+                      href={member.portfolioHref}
+                      rel={member.portfolioHref.startsWith("http") ? "noopener noreferrer" : undefined}
+                      target={member.portfolioHref.startsWith("http") ? "_blank" : undefined}
+                    >
+                      {member.portfolioLabel}
+                    </a>
+                  ) : (
+                    <span className={styles.memberLinkPending}>{member.portfolioLabel} ready to add</span>
+                  )}
+                </div>
               </article>
             ))}
           </div>
