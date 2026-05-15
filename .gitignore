@@ -23,6 +23,10 @@
 # misc
 .DS_Store
 *.pem
+.vs/
+/protfolio/
+/portfoilo/
+convert_to_tsx.py
 
 # debug
 npm-debug.log*
