@@ -828,6 +828,15 @@ section {
   font-size: 3rem;
 }
 
+.project-thumb-label {
+  font-family: 'Fira Code', monospace;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: 0;
+  color: var(--text-primary);
+  text-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
 .project-card:nth-child(1) .project-thumbnail-gradient {
   background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(6,182,212,0.15));
 }
@@ -916,6 +925,8 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
   padding-top: 18px;
   border-top: 1px solid var(--glass-border);
 }
@@ -927,6 +938,7 @@ section {
   display: flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
   transition: var(--transition-fast);
 }
 
@@ -1194,6 +1206,9 @@ section {
   }
   .about-stats {
     grid-template-columns: 1fr;
+  }
+  .project-footer {
+    justify-content: flex-start;
   }
 }
 

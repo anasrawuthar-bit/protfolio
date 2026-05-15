@@ -5,11 +5,11 @@
 
 // ===== Typing Animation =====
 const typedStrings = [
-  'Building web apps with Django 🐍',
-  'Learning Flutter & Electron 🚀',
-  'Competitive Gamer 🎮',
-  'Full-Stack Developer 💻',
-  'Open Source Enthusiast ⚡',
+  'Building Django web apps',
+  'Creating REST APIs for Android apps',
+  'Admin, client, and technician dashboards',
+  'WhatsApp automation and notifications',
+  'Angular portfolio websites',
 ];
 
 let stringIndex = 0;
@@ -138,8 +138,8 @@ filterBtns.forEach(btn => {
     const filter = btn.getAttribute('data-filter');
 
     projectCards.forEach(card => {
-      const category = card.getAttribute('data-category');
-      if (filter === 'all' || category === filter) {
+      const categories = (card.getAttribute('data-category') || '').split(/\s+/);
+      if (filter === 'all' || categories.includes(filter)) {
         card.style.display = '';
         card.style.animation = 'fadeInUp 0.5s ease forwards';
       } else {
@@ -152,80 +152,76 @@ filterBtns.forEach(btn => {
 // ===== Project Modal System =====
 const projectsData = {
   1: {
-    title: 'E-Commerce Platform',
-    tags: ['Python', 'Django', 'PostgreSQL', 'Stripe', 'HTML/CSS'],
+    title: 'GI Service Billing',
+    tags: ['Django', 'REST API', 'Android App', 'WhatsApp Automation', 'Billing'],
     body: `
-      <p>A comprehensive e-commerce platform built from scratch using Django, featuring a complete shopping experience from product browsing to checkout.</p>
-      <h4>✨ Key Features</h4>
+      <p>A complete Django-based service billing platform built for GI SERVICE BILLING, covering web dashboards and Android app workflows through API support.</p>
+      <h4>Key Features</h4>
       <ul>
-        <li>User authentication and profile management</li>
-        <li>Product catalog with search, filters, and categories</li>
-        <li>Shopping cart with real-time updates</li>
-        <li>Secure payment integration with Stripe</li>
-        <li>Admin dashboard for order and inventory management</li>
-        <li>Email notifications for order confirmations</li>
+        <li>Admin, technician, and client-side views</li>
+        <li>Feedback, follow-up, billing, and inventory modules</li>
+        <li>Team management and vendor management</li>
+        <li>Automated WhatsApp messaging workflows</li>
+        <li>Complete reports for service operations</li>
+        <li>Technician and vendor job history logs</li>
       </ul>
-      <h4>🛠️ Technical Details</h4>
-      <p>Built with Django 4.x, PostgreSQL for the database, Django REST Framework for API endpoints, and custom template engine for the frontend. Deployed on a Linux VPS with Nginx and Gunicorn.</p>
+      <h4>Technical Scope</h4>
+      <p>Built with Django and API endpoints for web and Android app usage, with role-based workflows and deployment at status.botgitech.com.</p>
     `,
-    links: { demo: '#', github: '#' }
+    links: { demo: 'https://status.botgitech.com' }
   },
   2: {
-    title: 'Task Manager App',
-    tags: ['Django', 'REST API', 'Django Channels', 'WebSocket', 'Redis'],
+    title: 'Pure H2O Service App',
+    tags: ['Django', 'REST API', 'Client Portal', 'Notifications', 'WhatsApp'],
     body: `
-      <p>A real-time collaborative task management application supporting team workflows with live updates powered by Django Channels and WebSockets.</p>
-      <h4>✨ Key Features</h4>
+      <p>A Django web and app backend for a water purifier company, built to manage customer product assignments and periodic spare replacement reminders.</p>
+      <h4>Key Features</h4>
       <ul>
-        <li>Real-time task updates via WebSocket connections</li>
-        <li>Team collaboration with role-based permissions</li>
-        <li>Kanban board with drag-and-drop interface</li>
-        <li>Automated email and push notifications</li>
-        <li>Task assignment, deadlines, and priority levels</li>
-        <li>Activity log and audit trail</li>
+        <li>Admin and client-side website views</li>
+        <li>API support for app workflows</li>
+        <li>Product and spare parts creation</li>
+        <li>Client-wise product and spare assignment</li>
+        <li>Expiry-based app and WhatsApp notifications</li>
+        <li>Client profile and service reminder management</li>
       </ul>
-      <h4>🛠️ Technical Details</h4>
-      <p>Utilizes Django Channels for WebSocket support, Redis as the channel layer backend, and Django REST Framework for the API. Frontend built with vanilla JavaScript and CSS Grid for the Kanban board.</p>
+      <h4>Business Impact</h4>
+      <p>The system helps customers replace purifier spares on time while giving the company a structured way to increase service and spare sales.</p>
     `,
-    links: { demo: '#', github: '#' }
+    links: { demo: 'https://app.pureh20.in' }
   },
   3: {
-    title: 'Mobile Inventory App',
-    tags: ['Flutter', 'Dart', 'Firebase', 'REST API'],
+    title: 'Pure H2O Portfolio Website',
+    tags: ['Portfolio Website', 'Responsive UI', 'Company Website'],
     body: `
-      <p>A cross-platform mobile application for businesses to manage their inventory on the go, with barcode scanning and cloud sync.</p>
-      <h4>✨ Key Features</h4>
+      <p>A company portfolio website created for Pure H2O to present the water purifier brand, services, and product credibility online.</p>
+      <h4>Key Features</h4>
       <ul>
-        <li>Barcode and QR code scanning for quick item lookup</li>
-        <li>Real-time inventory sync with Firebase</li>
-        <li>Stock alerts and low inventory notifications</li>
-        <li>Offline mode with automatic sync when connected</li>
-        <li>Reports and analytics dashboard</li>
-        <li>Multi-user support with role management</li>
+        <li>Responsive company portfolio layout</li>
+        <li>Service and product-focused presentation</li>
+        <li>Brand trust and customer-facing content sections</li>
+        <li>Mobile-friendly browsing experience</li>
       </ul>
-      <h4>🛠️ Technical Details</h4>
-      <p>Built with Flutter and Dart, using Firebase Firestore for real-time data, Firebase Auth for authentication, and integrated with a Django REST API backend for business logic.</p>
+      <h4>Project Goal</h4>
+      <p>Built to give the company a clean public-facing presence that supports brand discovery and customer confidence.</p>
     `,
-    links: { github: '#' }
+    links: { demo: 'https://pureh20.in' }
   },
   4: {
-    title: 'Desktop Notes App',
-    tags: ['Electron', 'Node.js', 'SQLite', 'Markdown'],
+    title: 'KE Group International Website',
+    tags: ['Angular', 'Portfolio Website', 'Responsive UI'],
     body: `
-      <p>A beautiful, minimal desktop note-taking app built with Electron, featuring markdown support and local-first data storage for privacy.</p>
-      <h4>✨ Key Features</h4>
+      <p>An Angular portfolio website built for KE Group International, a private limited company, with a clean and professional brand presentation.</p>
+      <h4>Key Features</h4>
       <ul>
-        <li>Full Markdown editing with live preview</li>
-        <li>Organize notes with folders and tags</li>
-        <li>Full-text search across all notes</li>
-        <li>Dark and light theme support</li>
-        <li>Local SQLite storage — no cloud required</li>
-        <li>Export notes as PDF or HTML</li>
+        <li>Angular-based portfolio website</li>
+        <li>Responsive page structure</li>
+        <li>Company-focused content presentation</li>
+        <li>Professional UI for public visitors</li>
       </ul>
-      <h4>🛠️ Technical Details</h4>
-      <p>Built with Electron and Node.js, using SQLite for persistent local storage, a custom Markdown parser, and CSS custom properties for theming. Cross-platform support for Windows, macOS, and Linux.</p>
+      <h4>Technical Scope</h4>
+      <p>Implemented with Angular for a structured frontend and deployed at kegroupintl.com.</p>
     `,
-    links: { github: '#' }
+    links: { demo: 'https://kegroupintl.com' }
   }
 };
 
@@ -243,10 +239,10 @@ function openModal(id) {
   const actionsContainer = document.getElementById('modalActions');
   let actionsHTML = '';
   if (project.links.demo) {
-    actionsHTML += `<a href="${project.links.demo}" class="btn btn-primary" target="_blank">🌐 Live Demo</a>`;
+    actionsHTML += `<a href="${project.links.demo}" class="btn btn-primary" target="_blank" rel="noopener">Live Website</a>`;
   }
   if (project.links.github) {
-    actionsHTML += `<a href="${project.links.github}" class="btn btn-secondary" target="_blank">⌨️ GitHub</a>`;
+    actionsHTML += `<a href="${project.links.github}" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>`;
   }
   actionsContainer.innerHTML = actionsHTML;
 
