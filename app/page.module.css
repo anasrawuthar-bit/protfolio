@@ -568,6 +568,104 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+.ventureShell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.8fr);
+  gap: clamp(1.25rem, 4vw, 2.5rem);
+  align-items: start;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border-radius: 2rem;
+  border: 1px solid rgba(20, 38, 61, 0.14);
+  color: #f7f2ea;
+  background:
+    linear-gradient(135deg, rgba(20, 38, 61, 0.96), rgba(28, 123, 116, 0.9)),
+    #14263d;
+  box-shadow: 0 32px 90px rgba(20, 38, 61, 0.22);
+}
+
+.ventureIntro {
+  display: grid;
+  gap: 1rem;
+}
+
+.ventureTitle {
+  max-width: 11ch;
+  margin: 0;
+  font-family: var(--font-display), serif;
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  line-height: 0.95;
+  font-weight: 500;
+}
+
+.ventureText {
+  max-width: 44rem;
+  margin: 0;
+  color: rgba(247, 242, 234, 0.82);
+  line-height: 1.8;
+}
+
+.venturePillars,
+.ventureTeam {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.venturePillars {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 0.4rem;
+}
+
+.venturePill {
+  padding: 0.85rem 0.95rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(247, 242, 234, 0.9);
+  font-size: 0.95rem;
+}
+
+.ventureLink {
+  width: fit-content;
+  min-height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 999px;
+  color: var(--text);
+  background: #f7f2ea;
+  font-weight: 800;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.ventureLink:hover,
+.ventureLink:focus-visible {
+  transform: translateY(-2px);
+  background: #fff;
+  outline: none;
+}
+
+.ventureMember {
+  padding: 1.1rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.ventureMember h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.08rem;
+}
+
+.ventureMember p {
+  margin: 0;
+  color: rgba(247, 242, 234, 0.78);
+  line-height: 1.7;
+}
+
 .storyCard {
   padding: clamp(1.5rem, 4vw, 2.25rem);
   border-radius: 2rem;
@@ -711,6 +809,7 @@
   .heroGrid,
   .dualGrid,
   .storyGrid,
+  .ventureShell,
   .sectionIntro {
     grid-template-columns: 1fr;
   }
@@ -744,14 +843,16 @@
   .metricList,
   .projectsGrid,
   .panelGrid,
-  .contactGrid {
+  .contactGrid,
+  .venturePillars {
     grid-template-columns: 1fr;
   }
 
   .heroPanel,
   .stackBoard,
   .contactShell,
-  .storyCard {
+  .storyCard,
+  .ventureShell {
     border-radius: 1.7rem;
   }
 
@@ -772,7 +873,8 @@
   .primaryButton,
   .secondaryButton,
   .contactPrimaryButton,
-  .contactSecondaryButton {
+  .contactSecondaryButton,
+  .ventureLink {
     width: 100%;
   }
 }

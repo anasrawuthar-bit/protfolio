@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 const quickFacts = [
   { value: "3+", label: "live client projects across web, mobile, and business automation" },
   { value: "2", label: "Django API-backed products with admin, staff, and client workflows" },
-  { value: "4", label: "deployed web properties including apps and company portfolio sites" },
+  { value: "Jan 2026", label: "co-founded GI Hostings with Ajmal and Rafi" },
 ];
 
 const featuredProjects = [
@@ -87,6 +87,28 @@ const capabilities = [
   },
 ];
 
+const venturePillars = [
+  "Websites and hosting",
+  "Django web apps and APIs",
+  "Odoo ERP development",
+  "Client support and delivery",
+];
+
+const ventureTeam = [
+  {
+    name: "Muhammad Anas",
+    role: "Django systems, APIs, automation, and product delivery",
+  },
+  {
+    name: "Ajmal",
+    role: "Hosting, web development, and customer relationship management",
+  },
+  {
+    name: "Rafi",
+    role: "Python and Odoo ERP development for business workflows",
+  },
+];
+
 const stackGroups = [
   {
     title: "Core stack",
@@ -98,7 +120,7 @@ const stackGroups = [
   },
   {
     title: "Business features",
-    items: ["WhatsApp Automation", "Notifications", "Billing", "Inventory", "Reports"],
+    items: ["WhatsApp Automation", "Notifications", "Billing", "Inventory", "Odoo ERP", "Hosting"],
   },
 ];
 
@@ -147,6 +169,7 @@ export default function Home() {
           <nav className={styles.navLinks} aria-label="Primary">
             <a href="#work">Work</a>
             <a href="#services">Services</a>
+            <a href="#venture">GI Hostings</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -162,8 +185,8 @@ export default function Home() {
             </h1>
             <p className={styles.lead}>
               I am Muhammad Anas, a developer focused on Django business systems, API-backed web and Android apps,
-              and practical automation for service teams. I care about clean data flow, reliable admin workflows,
-              and interfaces that help real users finish work faster.
+              practical automation for service teams, and co-building GI Hostings with a small technical team.
+              I care about clean data flow, reliable admin workflows, and interfaces that help real users finish work faster.
             </p>
             <div className={styles.actionRow}>
               <a className={styles.primaryButton} href="#contact">
@@ -215,7 +238,7 @@ export default function Home() {
               <article className={styles.panelCard}>
                 <h3 className={styles.panelCardTitle}>Delivery focus</h3>
                 <p className={styles.panelCardText}>
-                  Live client projects that solve operational problems instead of staying as demo screens.
+                  Live client projects and GI Hostings work that solve real business problems.
                 </p>
               </article>
             </div>
@@ -318,6 +341,41 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={styles.section} id="venture">
+        <div className={styles.ventureShell}>
+          <div className={styles.ventureIntro}>
+            <p className={styles.panelLabel}>Company venture</p>
+            <h2 className={styles.ventureTitle}>Co-building GI Hostings for websites, hosting, and business software.</h2>
+            <p className={styles.ventureText}>
+              GI Hostings is a website and hosting company I started with my friends Ajmal and Rafi in January 2026.
+              We help businesses get online with reliable hosting, polished websites, custom web applications, and
+              ERP-focused development support.
+            </p>
+
+            <div className={styles.venturePillars}>
+              {venturePillars.map((item) => (
+                <span className={styles.venturePill} key={item}>
+                  {item}
+                </span>
+              ))}
+            </div>
+
+            <a className={styles.ventureLink} href="https://gihostings.com" rel="noopener noreferrer" target="_blank">
+              Visit gihostings.com
+            </a>
+          </div>
+
+          <div className={styles.ventureTeam} aria-label="GI Hostings team">
+            {ventureTeam.map((member) => (
+              <article className={styles.ventureMember} key={member.name}>
+                <h3>{member.name}</h3>
+                <p>{member.role}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className={styles.section} id="about">
         <div className={styles.storyGrid}>
           <article className={styles.storyCard}>
@@ -336,8 +394,8 @@ export default function Home() {
                 spare-part reminders, billing, inventory, reports, and communication automation.
               </p>
               <p>
-                That mix of engineering discipline and practical product thinking is what I want this portfolio to
-                communicate: dependable systems, clear interfaces, and features that make everyday work easier.
+                I am also a co-founder at GI Hostings, where our team combines hosting, web development, Django systems,
+                and Odoo ERP experience for clients who need both a public web presence and practical business tools.
               </p>
             </div>
           </article>

@@ -22,18 +22,18 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "Muhammad Anas | Portfolio",
   description:
-    "Portfolio of Muhammad Anas, a Python and Django developer building API-backed web apps, Android app backends, automation, billing, inventory, and reporting systems.",
+    "Portfolio of Muhammad Anas, a Python and Django developer building API-backed web apps, Android app backends, automation, billing, inventory, reporting systems, and co-building GI Hostings.",
   openGraph: {
     title: "Muhammad Anas | Portfolio",
     description:
-      "Python and Django portfolio featuring live client systems for service operations, notifications, billing, inventory, reporting, and company websites.",
+      "Python and Django portfolio featuring live client systems, business automation, company websites, and GI Hostings, a web and hosting venture.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Muhammad Anas | Portfolio",
     description:
-      "Live Django, API, Android, automation, and portfolio website projects by Muhammad Anas.",
+      "Live Django, API, Android, automation, portfolio website, and GI Hostings work by Muhammad Anas.",
   },
 };
 
