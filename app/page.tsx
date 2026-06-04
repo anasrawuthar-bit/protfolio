@@ -102,13 +102,13 @@ const ventureTeam = [
     portfolioHref: "#top",
   },
   {
-    name: "Ajmal",
-    role: "Hosting, web development, and customer relationship management",
+    name: "Muhemmad Ajmal",
+    role: "Full-Stack Developer specializing in web applications, FiveM & Discord integrations, and cybersecurity solutions. Passionate about turning ideas into reliable digital products.Hosting, web development, and customer relationship management",
     portfolioLabel: "Portfolio website",
     portfolioHref: "https://itsmeajmal.in/",
   },
   {
-    name: "Rafi",
+    name: "Muhemmad Rafi",
     role: "Python and Odoo ERP development for business workflows",
     portfolioLabel: "Portfolio website",
     portfolioHref: "https://itsmerafi.in",
